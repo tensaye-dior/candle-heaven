@@ -1,30 +1,34 @@
-# Candle Heaven
+# Candle Heaven Australia
 
-A complete, mobile-friendly Candle Heaven storefront for Brisbane. It includes a searchable catalogue, shopping bag, checkout-ready order flow, WhatsApp ordering, Facebook and Instagram links, and a simple product manager.
+Premium, mobile-friendly Candle Heaven storefront hosted on GitHub Pages.
 
-## Preview on GitHub Pages
+## Live website
 
-1. Open this repository on GitHub.
-2. Select **Settings**.
-3. In the left menu, select **Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select **main** and **/(root)**, then select **Save**.
-6. Wait 1–3 minutes. Refresh the Pages screen and open **Visit site**.
+`https://tensaye-dior.github.io/candle-heaven/`
 
-The expected address is `https://tensaye-dior.github.io/candle-heaven/`.
+## Included
 
-## Preview on your laptop
+- Candle Heaven Australia luxury storefront
+- Searchable product collection
+- Shopping bag and checkout flow
+- Dedicated Our Story page
+- Shipping, returns, privacy, terms and candle-safety page
+- Product manager for adding candles and editing prices
+- Facebook and Instagram links
+- Phone: +61 466 846 785
+- Email: candleheaven609@gmail.com
+- Square checkout-ready configuration with WhatsApp fallback until a Square Payment Link is supplied
 
-Download the repository as a ZIP, unzip it, and double-click `index.html`. No installation or build command is required.
+## Square payment setup
 
-## Store setup
+Create a Square Payment Link inside the owner's Square account. Then paste only the public Square checkout URL into `squarePaymentLink` in `config.js`.
 
-- Phone/WhatsApp is set to `0423 727 047`.
-- Facebook is connected to the link supplied by Candle Heaven.
-- Replace the Instagram placeholder URL after creating the Candle Heaven Instagram page.
-- To accept card payments, paste a Stripe Payment Link into `CONFIG.stripePaymentLink` near the bottom of `index.html`.
-- To add a product, open the bag and expand **Store owner: add a new product**. Products added there are saved in that browser. The generated JSON can then be committed into the website for permanent publishing.
+Never place a bank-card number, CVV, banking password, Square password, API secret, verification code or private banking information inside this repository. GitHub Pages is public.
 
-## Technology
+## Products and photos
 
-The entire website is in `index.html`, so GitHub Pages can run it directly with no dependencies.
+Open `admin.html` to manage candle names, prices and product information. Product image files can be uploaded to an `images/` folder in the repository and referenced as `images/your-photo.jpg`.
+
+## Security model
+
+The storefront never needs to receive or store full card details. Payment should be completed on Square's secure hosted checkout page. GitHub Pages provides HTTPS for the public site.
